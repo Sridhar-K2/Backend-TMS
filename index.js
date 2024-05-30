@@ -32,7 +32,7 @@ mongoose.connect(process.env.MONGO)
         app.use(cookieParser()); // Parse cookies */
         // const allowedOrigins = ['http://localhost:3000', 'https://superb-mousse-933e54.netlify.app/'];
         app.use(cors({
-            origin :["http://localhost:3000", "https://superb-mousse-933e54.netlify.app"]}))
+            origin :[ "*"]}))
         
     app.use(cors({
         origin: function (origin, callback) {
