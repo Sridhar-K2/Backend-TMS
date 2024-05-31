@@ -31,6 +31,7 @@ const verifyUser = (req, res, next) => {
 
 //routes to create a new user
 router.post('/signup', async (req, res) => {
+    console.log("signup Components");
     const newUser = new model({
         userName: req.body.userName,
         email: req.body.email,
