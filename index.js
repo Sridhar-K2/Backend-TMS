@@ -30,7 +30,7 @@ mongoose.connect(process.env.MONGO)
             credentials: true // Allow cookies to be sent cross-origin
         }));
         app.use(cookieParser()); // Parse cookies */
-        const allowedOrigins = ['http://localhost:3000', 'https://stately-marzipan-2671de.netlify.app/'];
+        const allowedOrigins = ['https://stately-marzipan-2671de.netlify.app/'];
 
     app.use(cors({
         origin: function (origin, callback) {
