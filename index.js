@@ -33,15 +33,15 @@ mongoose.connect(process.env.MONGO)
         const allowedOrigins = ['https://stately-marzipan-2671de.netlify.app/'];
 
     app.use(cors({
-        origin: function (origin, callback) {
-            if (!origin || allowedOrigins.includes(origin)) {
-                callback(null, true); // Allow the request
-            } else {
-                callback(new Error('Not allowed by CORS')); // Block the request
-            }
-        },
-        methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE"],
-        credentials: true // Allow cookies to be sent cross-origin
+        // origin: function (origin, callback) {
+        //     if (!origin || allowedOrigins.includes(origin)) {
+        //         callback(null, true); // Allow the request
+        //     } else {
+        //         callback(new Error('Not allowed by CORS')); // Block the request
+        //     }
+        // },
+        // methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE"],
+        // credentials: true // Allow cookies to be sent cross-origin
     }));
 
         // Mount the router for API endpoints under "/api"
