@@ -66,6 +66,7 @@ router.post('/login', async (req, res) => {
 
 //route to get user and user's projects after authorization is confirmed 
 router.get('/tasks',  async (req, res) => {
+    console.log(req.query)
     try {
         const userDetails = await model.findOne({ email: req.query.email })
         res.send(userDetails)
