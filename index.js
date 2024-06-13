@@ -25,7 +25,7 @@ mongoose.connect(process.env.MONGO)
         app.use(express.json()); // Parse JSON bodies
        /* app.use(cors({
             //origin: 'http://localhost:3000',
-            origin: 'https://comfy-mousse-86384e.netlify.app/', // Allow requests from this origin
+            origin: 'https://stately-marzipan-2671de.netlify.app', // Allow requests from this origin
             methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE"],
             credentials: true // Allow cookies to be sent cross-origin
         }));
