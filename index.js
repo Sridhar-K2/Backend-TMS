@@ -30,7 +30,7 @@ mongoose.connect(process.env.MONGO)
             credentials: true // Allow cookies to be sent cross-origin
         }));
         app.use(cookieParser()); // Parse cookies */
-        const allowedOrigins = ['http://localhost', 'https://taskmanagementapp01.vercel.app'];
+        
      app.use(cors())
     // app.use(cors({
     //     origin: function (origin, callback) {
