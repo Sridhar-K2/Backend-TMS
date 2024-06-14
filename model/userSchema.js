@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
-const validator = require('validator')
+const validator = require('validator');
 
-//model schema
+// Model schema
 let userSchema = new mongoose.Schema({
     userName: String,
     email: {
@@ -10,7 +10,7 @@ let userSchema = new mongoose.Schema({
         unique: true,
         lowercase: true,
         validate: (value) => {
-            return validator.isEmail(value)
+            return validator.isEmail(value);
         }
     },
     password: String,
@@ -22,7 +22,6 @@ let userSchema = new mongoose.Schema({
             isDone: Boolean,
         }
     ]
-})
+});
 
-
-module.exports = mongoose.model('User', userSchema)
+module.exports = mongoose.model('User', userSchema);
