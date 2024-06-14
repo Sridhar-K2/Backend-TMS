@@ -48,7 +48,7 @@ mongoose.connect(process.env.MONGO)
         app.use('/api', router);
 
         // Start the Express server
-        const PORT = process.env.PORT || 5000; // Use specified port or default to 5000
+        const PORT = process.env.PORT || 5050; // Use specified port or default to 5000
         app.listen(PORT, () => {
             console.log(`Server is running on port ${PORT}`);
         });
