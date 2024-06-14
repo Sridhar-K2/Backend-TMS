@@ -23,13 +23,13 @@ mongoose.connect(process.env.MONGO)
 
         // Set up middleware
         app.use(express.json()); // Parse JSON bodies
-       /* app.use(cors({
-            //origin: 'http://localhost:3000',
-            origin: 'https://stately-marzipan-2671de.netlify.app/', // Allow requests from this origin
-            methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE"],
+     app.use(cors({
+        origin: 'http://localhost:3000',
+        origin: 'https://clever-hummingbird-d337bb.netlify.app', // Allow requests from this origin
+         methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE"],
             credentials: true // Allow cookies to be sent cross-origin
         }));
-        app.use(cookieParser()); // Parse cookies */
+        app.use(cookieParser()); // Parse cookies 
         
     //  app.use(cors())
     // app.use(cors({
