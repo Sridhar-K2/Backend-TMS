@@ -31,7 +31,7 @@ mongoose.connect(process.env.MONGO)
         }));
         app.use(cookieParser()); // Parse cookies */
         
-     app.use(cors())
+    //  app.use(cors())
     // app.use(cors({
     //     origin: function (origin, callback) {
     //         if (!origin || allowedOrigins.includes(origin)) {
